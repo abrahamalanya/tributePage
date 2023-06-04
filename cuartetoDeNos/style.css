@@ -3,7 +3,7 @@
   --color-black2: #394867;
   --color-white: #F1F6F9;
   --color-gray: #9BA4B5;
-  --color-btn: #f2ef49;
+  --color-primary: #f2ef49;
 }
 
 * {
@@ -25,7 +25,7 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-color: var(--color-btn);
+  background-color: var(--color-primary);
   color: var(--color-black);
   border: transparent;
   border-radius: 1rem;
@@ -101,7 +101,7 @@ ul {
   gap: 1rem;
 }
 
-li {
+a {
   cursor: pointer;
 }
 
@@ -160,18 +160,20 @@ section h1 {
 }
 
 .card {
-  width: fit-content;
+  width: 200px;
   height: 35vh;
   border-radius: 1rem;
   box-shadow: 2px 2px 15px 1px var(--color-gray);
 }
 
 .card img {
+  width: inherit;
   height: inherit;
   border-radius: 1rem;
 }
 
 .card figure {
+  width: inherit;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
