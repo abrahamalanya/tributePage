@@ -1,0 +1,19 @@
+{
+  "name": "tributepage",
+  "version": "1.0.0",
+  "description": "Crear triuto a banda favorita",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abrahamalanya/tributePage.git"
+  },
+  "author": "abrahamalanya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abrahamalanya/tributePage/issues"
+  },
+  "homepage": "https://github.com/abrahamalanya/tributePage#readme"
+}
