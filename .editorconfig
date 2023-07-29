@@ -4,3 +4,7 @@
 [*]
 indent_style = space
 indent_size = 2
+
+# Excepciones para etiquetas específicas
+[*.html]
+max_preserve_newlines = 0
