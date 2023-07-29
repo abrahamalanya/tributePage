@@ -1,0 +1,6 @@
+# Archivo .editorconfig
+
+# Define el estilo de indentación
+[*]
+indent_style = space
+indent_size = 2
