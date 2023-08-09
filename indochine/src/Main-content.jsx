@@ -1,6 +1,7 @@
+import { AlbumCard } from "./AlbumCard.jsx";
 import "./Main-content.css";
 
-export function Main({albums } ) {
+export function Main({ albums }) {
   return (
     <main className="container">
       <section id="home">
@@ -74,17 +75,17 @@ export function Main({albums } ) {
         </article>
       </section>
       <div className="oneline"></div>
-      <section className="section" id="album">
+      <section className="section" id="latestAlbum">
         <article className="article-header">
           <img src="https://cdn.simpleicons.org/github/white" />
           <p>RELEASED ALBUM</p>
           <h3>LATEST ALBUM</h3>
         </article>
-        <section className="album-col-2">
-          <article className="album-gallery">
+        <section className="latestAlbum-col-2">
+          <article className="latestAlbum-gallery">
             <img src="https://mutationmedia.net/OUMAILA/img/vinyl.png" />
           </article>
-          <article className="album-description">
+          <article className="latestAlbum-description">
             <p>LABEL: Limitles</p>
             <p>RELEASED: March 23/3/18</p>
             <p>GENERO: Rock/Pop</p>
@@ -107,8 +108,8 @@ export function Main({albums } ) {
             </div>
           </article>
         </section>
-        <section className="album-col">
-          <article className="album-top">
+        <section className="latestAlbum-col">
+          <article className="latestAlbum-top">
             <div>
               <div className="top-name">
                 <img src="https://cdn.simpleicons.org/github/gray" />
@@ -149,6 +150,23 @@ export function Main({albums } ) {
         </section>
       </section>
       <div className="oneline"></div>
+      <section className="section" id="album">
+        <article className="article-header">
+          <img src="https://cdn.simpleicons.org/github/white" />
+          <p>ALL LIST</p>
+          <h3>ALBUMS</h3>
+        </article>
+        <article className="albumGallery">
+          {
+            albums.map((album) => (
+              <AlbumCard
+                key={ album.id }
+                image={ "https://mutationmedia.net/OUMAILA/img/6.jpg" }
+                title={ album.title } />
+            ))
+          }
+        </article>
+      </section>
       <section className="section" id="contact">
         <article className="article-header">
           <img src="https://cdn.simpleicons.org/github/white" />
