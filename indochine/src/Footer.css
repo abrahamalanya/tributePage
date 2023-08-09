@@ -1,0 +1,11 @@
+/* =======================footer======================= */
+#footer {
+  display: grid;
+  place-content: center;
+}
+
+#footer h4 {
+  font-size: var(--sm);
+  font-weight: 300;
+  letter-spacing: 1px;
+}

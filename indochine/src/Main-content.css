@@ -1,0 +1,127 @@
+/* =======================main======================= */
+/* home */
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 3rem;
+  gap: 1rem;
+}
+
+#home .frontpage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#home p {
+  font-size: large;
+}
+
+/* about */
+#about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 70vh) 1fr;
+}
+
+.about-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 400px;
+  gap: 1rem;
+}
+
+.about-gallery .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* album */
+#album {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.album-col {
+  display: grid;
+  grid-template-columns: 1fr min(800px, 90%) 1fr;
+  place-content: center;
+}
+
+.album-col > * {
+  grid-column: 2;
+}
+
+.album-col-2 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.album-gallery img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.album-description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.album-top {
+  border: 1px solid gray;
+  border-bottom: none;
+}
+
+.album-top > * {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.album-top img {
+  width: 30px;
+  height: 30px;
+}
+
+.album-top .top-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.album-top .top-name h3 {
+  font-size: var(--sm);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.album-top .top-name p {
+  font-weight: 200;
+}
