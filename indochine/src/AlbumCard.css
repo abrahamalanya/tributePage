@@ -5,10 +5,12 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  cursor: pointer;
 }
 
 .albumCard-image {
   width: 100%;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -16,4 +18,9 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
+}
+
+.albumCard:hover {
+  transform: scale(1.1);
+  border-color: gold;
 }
