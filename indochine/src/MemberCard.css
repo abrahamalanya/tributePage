@@ -1,0 +1,25 @@
+.memberCard {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memberCard-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.memberCard-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.memberCard-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+}

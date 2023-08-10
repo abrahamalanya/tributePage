@@ -9,7 +9,8 @@ export function App() {
     <>
       <Header artists={ data.artists }></Header>
       <Main
-        albums={data.albums}>
+        albums={data.albums}
+        members={data.members}>
       </Main>
       <Footer></Footer>
     </>

@@ -4,28 +4,28 @@ export function Header({artists}) {
   const indochine = artists[0];
   const navLists = [
     {
-      name: "Home"
+      name: "home"
     },
     {
-      name: "About"
+      name: "about"
     },
     {
-      name: "Discography"
+      name: "discography"
     },
     {
-      name: "Band"
+      name: "band"
     },
     {
-      name: "Tours"
+      name: "tours"
     },
     {
-      name: "Gallery"
+      name: "gallery"
     },
     {
-      name: "News"
+      name: "news"
     },
     {
-      name: "Contact"
+      name: "contact"
     }
   ]
 
@@ -35,7 +35,7 @@ export function Header({artists}) {
         <h1>{indochine.name}</h1>
         <ul>
           {
-            navLists.map(({name}) => (
+            navLists.map(({ name }) => (
               <li key={name}>
                 <a href="#">{name}</a>
               </li>

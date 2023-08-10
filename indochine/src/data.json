@@ -88,5 +88,67 @@
       "letter": "",
       "release_date": ""
     }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "name": "Nicola",
+      "last_name": "Sirkis",
+      "nickname": "",
+      "bithdate": "",
+      "country_location": "France",
+      "city_location": "",
+      "instrumentation": "",
+      "status_artist": "",
+      "artist_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Marc",
+      "last_name": "Eliard",
+      "nickname": "",
+      "bithdate": "",
+      "country_location": "France",
+      "city_location": "",
+      "instrumentation": "",
+      "status_artist": "",
+      "artist_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Boris",
+      "last_name": "Jardel",
+      "nickname": "",
+      "bithdate": "",
+      "country_location": "France",
+      "city_location": "",
+      "instrumentation": "",
+      "status_artist": "",
+      "artist_id": 1
+    },
+    {
+      "id": 4,
+      "name": "Oliver",
+      "last_name": "Gérard",
+      "nickname": "",
+      "bithdate": "",
+      "country_location": "France",
+      "city_location": "",
+      "instrumentation": "",
+      "status_artist": "",
+      "artist_id": 1
+    },
+    {
+      "id": 5,
+      "name": "Ludwing",
+      "last_name": "Dahlberg",
+      "nickname": "",
+      "bithdate": "",
+      "country_location": "France",
+      "city_location": "",
+      "instrumentation": "",
+      "status_artist": "",
+      "artist_id": 1
+    }
   ]
 }

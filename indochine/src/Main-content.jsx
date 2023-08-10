@@ -1,7 +1,8 @@
 import { AlbumCard } from "./AlbumCard.jsx";
+import { MemberCard } from "./MemberCard.jsx";
 import "./Main-content.css";
 
-export function Main({ albums }) {
+export function Main({ albums, members }) {
   return (
     <main className="container">
       <section id="home">
@@ -150,7 +151,7 @@ export function Main({ albums }) {
         </section>
       </section>
       <div className="oneline"></div>
-      <section className="section" id="album">
+      <section className="section" id="discography">
         <article className="article-header">
           <img src="https://cdn.simpleicons.org/github/white" />
           <p>ALL LIST</p>
@@ -163,6 +164,25 @@ export function Main({ albums }) {
                 key={ album.id }
                 image={ "https://mutationmedia.net/OUMAILA/img/6.jpg" }
                 title={ album.title } />
+            ))
+          }
+        </article>
+      </section>
+      <div className="oneline"></div>
+      <section className="section" id="band">
+        <article className="article-header">
+          <img src="https://cdn.simpleicons.org/github/white" />
+          <p>THE BAND MEMBERS</p>
+          <h3>BAND MEMBERS</h3>
+        </article>
+        <article className="memberGallery">
+          {
+            members.map((member) => (
+              <MemberCard
+                key={ member.id }
+                image={"https://mutationmedia.net/OUMAILA/img/6.jpg"}
+                name={ member.name }
+                lastName={ member.last_name } />
             ))
           }
         </article>
