@@ -1,43 +1,19 @@
 import "./Header.css";
 
-export function Header({artists}) {
-  const indochine = artists[0];
-  const navLists = [
-    {
-      name: "home"
-    },
-    {
-      name: "about"
-    },
-    {
-      name: "discography"
-    },
-    {
-      name: "band"
-    },
-    {
-      name: "tours"
-    },
-    {
-      name: "gallery"
-    },
-    {
-      name: "news"
-    },
-    {
-      name: "contact"
-    }
-  ]
-
+export function Header({ artist, navLists }) {
   return (
-    <header className="container">
-      <nav>
-        <h1>{indochine.name}</h1>
-        <ul>
+    <header className="container navBar">
+      <nav className="navBarContent">
+        <h1 className="navBarLogo">{artist.name}</h1>
+        <ul className="navBarList">
           {
-            navLists.map(({ name }) => (
+            navLists.map(({ name, link }) => (
               <li key={name}>
-                <a href="#">{name}</a>
+                <a
+                  href={link}
+                  className="navBarLink">
+                  {name}
+                </a>
               </li>
             ))
           }

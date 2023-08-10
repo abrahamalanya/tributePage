@@ -150,5 +150,22 @@
       "status_artist": "",
       "artist_id": 1
     }
+  ],
+  "social_networks": [
+    {
+      "id": 1,
+      "name": "facebook",
+      "icon": "https://cdn.simpleicons.org/facebook/#1877F2"
+    },
+    {
+      "id": 2,
+      "name": "instagram",
+      "icon": "https://cdn.simpleicons.org/instagram/#E4405F"
+    },
+    {
+      "id": 3,
+      "name": "spotify",
+      "icon": "https://cdn.simpleicons.org/spotify/#1DB954"
+    }
   ]
 }

@@ -22,5 +22,5 @@
 
 .albumCard:hover {
   transform: scale(1.1);
-  border-color: gold;
+  border-color: var(--color);
 }

@@ -14,7 +14,7 @@ export function Main({ albums, members }) {
         />
         <h2>Indochine Banda Musical</h2>
         <p>Creamos una web, como tributo a la banda</p>
-        <a href="#">
+        <a href="https://github.com/abrahamalanya/tributePage/tree/main/indochine">
           <img
             height="32"
             width="32"
