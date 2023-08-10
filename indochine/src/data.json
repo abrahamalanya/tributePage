@@ -1,0 +1,154 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "name": "Indochine",
+      "biography": "Banda de rock",
+      "country_origin": "Francia",
+      "country_location": "Francia",
+      "city_location": "Paris",
+      "activity_start_date": "1996",
+      "activity_end_date": ""
+    }
+  ],
+  "albums": [
+    {
+      "id": 1,
+      "title": "L'aventurier",
+      "release_date": "1982",
+      "artist_id": 1
+    },
+    {
+      "id": 2,
+      "title": "Le péril jaune",
+      "release_date": "1983",
+      "artist_id": 1
+    },
+    {
+      "id": 3,
+      "title": "3",
+      "release_date": "1985",
+      "artist_id": 1
+    }
+  ],
+  "songs": [
+    {
+      "id": 1,
+      "title": "L'aventurier",
+      "author_name": "Indochine",
+      "duration": 3.51,
+      "letter": "",
+      "release_date": ""
+    },
+    {
+      "id": 2,
+      "title": "L'opportuniste",
+      "author_name": "Indochine",
+      "duration": 2.24,
+      "letter": "",
+      "release_date": ""
+    },
+    {
+      "id": 3,
+      "title": "Leila",
+      "author_name": "Indochine",
+      "duration": 3.53,
+      "letter": "",
+      "release_date": ""
+    },
+    {
+      "id": 4,
+      "title": "Docteur Love",
+      "author_name": "Indochine",
+      "duration": 2.30,
+      "letter": "",
+      "release_date": ""
+    },
+    {
+      "id": 5,
+      "title": "Indochine (les 7 jours de Pékin)",
+      "author_name": "Indochine",
+      "duration": 2.20,
+      "letter": "",
+      "release_date": ""
+    },
+    {
+      "id": 6,
+      "title": "Dizzidence Politik - Pacifik Version",
+      "author_name": "Indochine",
+      "duration": 4.19,
+      "letter": "",
+      "release_date": ""
+    },
+    {
+      "id": 7,
+      "title": "Françoise (qu'est-ce qui t'a pris ?)",
+      "author_name": "Indochine",
+      "duration": 2.35,
+      "letter": "",
+      "release_date": ""
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "name": "Nicola",
+      "last_name": "Sirkis",
+      "nickname": "",
+      "bithdate": "",
+      "country_location": "France",
+      "city_location": "",
+      "instrumentation": "",
+      "status_artist": "",
+      "artist_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Marc",
+      "last_name": "Eliard",
+      "nickname": "",
+      "bithdate": "",
+      "country_location": "France",
+      "city_location": "",
+      "instrumentation": "",
+      "status_artist": "",
+      "artist_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Boris",
+      "last_name": "Jardel",
+      "nickname": "",
+      "bithdate": "",
+      "country_location": "France",
+      "city_location": "",
+      "instrumentation": "",
+      "status_artist": "",
+      "artist_id": 1
+    },
+    {
+      "id": 4,
+      "name": "Oliver",
+      "last_name": "Gérard",
+      "nickname": "",
+      "bithdate": "",
+      "country_location": "France",
+      "city_location": "",
+      "instrumentation": "",
+      "status_artist": "",
+      "artist_id": 1
+    },
+    {
+      "id": 5,
+      "name": "Ludwing",
+      "last_name": "Dahlberg",
+      "nickname": "",
+      "bithdate": "",
+      "country_location": "France",
+      "city_location": "",
+      "instrumentation": "",
+      "status_artist": "",
+      "artist_id": 1
+    }
+  ]
+}

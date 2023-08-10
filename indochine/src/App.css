@@ -1,0 +1,59 @@
+html {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr min(1200px, 90%) 1fr;
+}
+
+.container > * {
+  grid-column: 2;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: var(--xxl);
+}
+
+/* links */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.links ul {
+  margin-top: 1rem;
+}
+
+/* oneline */
+.oneline {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: gray;
+}

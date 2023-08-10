@@ -1,0 +1,21 @@
+/* =======================header======================= */
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem 0;
+  position: fixed;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  gap: 2.5rem;
+}
