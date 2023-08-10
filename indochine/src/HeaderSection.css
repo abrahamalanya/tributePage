@@ -1,0 +1,23 @@
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.headerSection-image {
+  width: 30px;
+  height: 30px;
+}
+
+.headerSection-subtitle {
+  font-size: var(--font-size);
+  font-weight: 300;
+}
+
+.headerSection-title {
+  font-size: var(--md);
+  letter-spacing: 2px;
+  font-weight: 900;
+}

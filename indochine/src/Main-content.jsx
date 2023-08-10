@@ -1,3 +1,4 @@
+import { HeaderSection } from "./HeaderSection.jsx";
 import { AlbumCard } from "./AlbumCard.jsx";
 import { MemberCard } from "./MemberCard.jsx";
 import "./Main-content.css";
@@ -77,11 +78,11 @@ export function Main({ albums, members }) {
       </section>
       <div className="oneline"></div>
       <section className="section" id="latestAlbum">
-        <article className="article-header">
-          <img src="https://cdn.simpleicons.org/github/white" />
-          <p>RELEASED ALBUM</p>
-          <h3>LATEST ALBUM</h3>
-        </article>
+        <HeaderSection
+          image={"https://cdn.simpleicons.org/github/white"}
+          title={"LATEST ALBUM"}
+          subtitle={"RELEASED ALBUM"}>
+        </HeaderSection>
         <section className="latestAlbum-col-2">
           <article className="latestAlbum-gallery">
             <img src="https://mutationmedia.net/OUMAILA/img/vinyl.png" />
@@ -152,11 +153,11 @@ export function Main({ albums, members }) {
       </section>
       <div className="oneline"></div>
       <section className="section" id="discography">
-        <article className="article-header">
-          <img src="https://cdn.simpleicons.org/github/white" />
-          <p>ALL LIST</p>
-          <h3>ALBUMS</h3>
-        </article>
+        <HeaderSection
+          image={"https://cdn.simpleicons.org/github/white"}
+          title={"ALBUMS"}
+          subtitle={"ALL COMPLETE ALBUMS"}>
+        </HeaderSection>
         <article className="albumGallery">
           {
             albums.map((album) => (
@@ -170,11 +171,11 @@ export function Main({ albums, members }) {
       </section>
       <div className="oneline"></div>
       <section className="section" id="band">
-        <article className="article-header">
-          <img src="https://cdn.simpleicons.org/github/white" />
-          <p>THE BAND MEMBERS</p>
-          <h3>BAND MEMBERS</h3>
-        </article>
+        <HeaderSection
+          image={"https://cdn.simpleicons.org/github/white"}
+          title={"BAND MEMBERS"}
+          subtitle={"THE BAND MEMBERS"}>
+        </HeaderSection>
         <article className="memberGallery">
           {
             members.map((member) => (
@@ -188,11 +189,11 @@ export function Main({ albums, members }) {
         </article>
       </section>
       <section className="section" id="contact">
-        <article className="article-header">
-          <img src="https://cdn.simpleicons.org/github/white" />
-          <p>CONTACT WITH US</p>
-          <h3>STAY IN TOUCH</h3>
-        </article>
+        <HeaderSection
+          image={"https://cdn.simpleicons.org/github/white"}
+          title={"STAY IN TOUCH"}
+          subtitle={"CONTACT WITH US"}>
+        </HeaderSection>
         <article className="links">
           <ul>
             <li>
