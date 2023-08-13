@@ -40,6 +40,7 @@ const navLists = [
 ]
 
 const indochine = data.artists[0]
+const latestAlbum = data.albums[data.albums.length - 1]
 
 export function App() {
   return (
@@ -49,7 +50,10 @@ export function App() {
         navLists={navLists}>
       </Header>
       <Main
+        artist={indochine}
+        latestAlbum={latestAlbum}
         albums={data.albums}
+        songs={data.songs}
         members={data.members}>
       </Main>
       <Footer></Footer>

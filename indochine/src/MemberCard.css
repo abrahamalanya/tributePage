@@ -23,3 +23,13 @@
   letter-spacing: 3px;
   font-weight: 300;
 }
+
+@media (max-width: 1000px) {
+  .memberCard {
+    width: 200px;
+  }
+
+  .memberCard-image {
+    height: 300px;
+  }
+}

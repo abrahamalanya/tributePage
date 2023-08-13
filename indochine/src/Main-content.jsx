@@ -1,9 +1,10 @@
 import { HeaderSection } from "./HeaderSection.jsx";
+import { Album } from "./Album.jsx";
 import { AlbumCard } from "./AlbumCard.jsx";
 import { MemberCard } from "./MemberCard.jsx";
 import "./Main-content.css";
 
-export function Main({ albums, members }) {
+export function Main({ artist, latestAlbum, albums, songs, members }) {
   return (
     <main className="container">
       <section id="home">
@@ -12,7 +13,7 @@ export function Main({ albums, members }) {
           className="frontpage"
           alt="indochine"
         />
-        <h2>Indochine Banda Musical</h2>
+        <h2>{ artist.name }</h2>
         <p>Creamos una web, como tributo a la banda</p>
         <a href="https://github.com/abrahamalanya/tributePage/tree/main/indochine">
           <img
@@ -25,12 +26,8 @@ export function Main({ albums, members }) {
       <section className="section" id="about">
         <section className="about-col-2">
           <article className="about-description">
-            <h3>INDOCHINE</h3>
-            <p>
-              'CENTRAL TOUR, LE FILM' : disponible en CD / DVD / BLU-RAY / Livre
-              Collector et Digital ! En savoir plus
-              https://indochine.lnk.to/CentralTourLeFilm
-            </p>
+            <h3>{ artist.name }</h3>
+            <p>{  artist.biography }</p>
           </article>
           <article className="about-gallery">
             <div className="card-image">
@@ -51,11 +48,9 @@ export function Main({ albums, members }) {
             </div>
           </article>
           <article className="about-description">
-            <h3>OPEN TOUR</h3>
-            <p>Coliseo Wanka</p>
-            <p>Huancayo-Junin-Perú</p>
-            <p>HORARIO</p>
-            <p>28 de Setiembre</p>
+            <h3>MORE DATA</h3>
+            <p>Started: { artist.activity_start_date }</p>
+            <p>Nationality: { artist.country_origin }</p>
           </article>
         </section>
         <article className="links">
@@ -83,73 +78,10 @@ export function Main({ albums, members }) {
           title={"LATEST ALBUM"}
           subtitle={"RELEASED ALBUM"}>
         </HeaderSection>
-        <section className="latestAlbum-col-2">
-          <article className="latestAlbum-gallery">
-            <img src="https://mutationmedia.net/OUMAILA/img/vinyl.png" />
-          </article>
-          <article className="latestAlbum-description">
-            <p>LABEL: Limitles</p>
-            <p>RELEASED: March 23/3/18</p>
-            <p>GENERO: Rock/Pop</p>
-            <p>STYLES: Indie Rock</p>
-            <div className="links">
-              <ul>
-                <li>
-                  <a href="#">Facebook</a>
-                </li>
-                <li>
-                  <a href="#">Spotify</a>
-                </li>
-                <li>
-                  <a href="#">Youtube</a>
-                </li>
-                <li>
-                  <a href="#">Snapchat</a>
-                </li>
-              </ul>
-            </div>
-          </article>
-        </section>
-        <section className="latestAlbum-col">
-          <article className="latestAlbum-top">
-            <div>
-              <div className="top-name">
-                <img src="https://cdn.simpleicons.org/github/gray" />
-                <div>
-                  <h3>LATEST ALBUM</h3>
-                  <p>INDOCHINE</p>
-                </div>
-              </div>
-              <div className="top-link">
-                <img src="https://cdn.simpleicons.org/github/white" />
-              </div>
-            </div>
-            <div>
-              <div className="top-name">
-                <img src="https://cdn.simpleicons.org/github/gray" />
-                <div>
-                  <h3>LATEST ALBUM</h3>
-                  <p>INDOCHINE</p>
-                </div>
-              </div>
-              <div className="top-link">
-                <img src="https://cdn.simpleicons.org/github/white" />
-              </div>
-            </div>
-            <div>
-              <div className="top-name">
-                <img src="https://cdn.simpleicons.org/github/gray" />
-                <div>
-                  <h3>LATEST ALBUM</h3>
-                  <p>INDOCHINE</p>
-                </div>
-              </div>
-              <div className="top-link">
-                <img src="https://cdn.simpleicons.org/github/white" />
-              </div>
-            </div>
-          </article>
-        </section>
+        <Album
+          album={latestAlbum}
+          songs={songs}>
+        </Album>
       </section>
       <div className="oneline"></div>
       <section className="section" id="discography">

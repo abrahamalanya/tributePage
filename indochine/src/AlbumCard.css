@@ -24,3 +24,9 @@
   transform: scale(1.1);
   border-color: var(--color);
 }
+
+@media (max-width: 1000px) {
+  .albumCard {
+    width: 200px;
+  }
+}
